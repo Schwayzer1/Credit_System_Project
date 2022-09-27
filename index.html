@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Credit System</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="text-center m-4 display-3 fw-bold">Credit System</h1>
+      <div class="row justify-content-center text-center m-5">
+        <div class="col-8">
+          <label for="select" class="fs-3 mb-2 fw-bold">Credit Type</label>
+          <select name="" id="select" class="form-select text-center">
+            <option value="select credit type" selected disabled>
+              Select Credit Type
+            </option>
+            <option value="House">Housing Loan</option>
+            <option value="Vehicle">Vehicle Credit</option>
+            <option value="Personal">Personal Finance Credit</option>
+          </select>
+        </div>
+      </div>
+      <div class="row gap-3 justify-content-center">
+        <input
+          type="number"
+          name=""
+          id="reqloan"
+          placeholder="requested loan"
+          class="col-4"
+        />
+        <input
+          type="number"
+          name=""
+          id="amount"
+          placeholder="installment amount"
+          class="col-4"
+        />
+      </div>
+      <button class="d-block btn btn-dark col-2 mx-auto my-4" id="calcbtn">
+        Calculate
+      </button>
+    </div>
+    <div class="container justify-content-center text-center" id="infos"></div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
